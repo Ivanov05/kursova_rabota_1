@@ -6,5 +6,14 @@ namespace kursova_rabota_1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Rectangle);
+            t.Start();
+        }
+        private void Rectangle()
+        {
+        }
     }
 }
