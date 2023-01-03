@@ -58,5 +58,14 @@ namespace kursova_rabota_1
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Circle);
+            t.Start();
+        }
+        private void Circle()
+        {
+        }
     }
 }
