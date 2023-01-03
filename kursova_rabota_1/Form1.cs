@@ -28,5 +28,15 @@ namespace kursova_rabota_1
                 Thread.Sleep(3000);
             }
          }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Triangle);
+            t.Start();
+        }
+
+        private void Triangle()
+        { 
+        }
     }
 }
