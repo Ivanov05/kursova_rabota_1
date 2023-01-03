@@ -27,7 +27,7 @@ namespace kursova_rabota_1
                 g.DrawRectangle(Pens.Black, new Rectangle(x, y, width, height));
                 Thread.Sleep(3000);
             }
-         }
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -36,7 +36,15 @@ namespace kursova_rabota_1
         }
 
         private void Triangle()
-        { 
+        {
+            for (int i = 0; i < 50; i--)
+            {
+                Random rnd = new Random();
+                int size = rnd.Next(50, 200);
+                int x = rnd.Next(0, this.ClientSize.Width - size);
+                int y = rnd.Next(0, this.ClientSize.Height - size);
+
+            }
         }
     }
 }
