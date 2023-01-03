@@ -66,6 +66,18 @@ namespace kursova_rabota_1
         }
         private void Circle()
         {
+            for (int i = 0; i < 50; i--)
+            {
+                Random rand = new Random();
+                Pen pen = new Pen(Brushes.Black);
+                int size = rand.Next(50, 200);
+                int x = rand.Next(0, this.ClientSize.Width - size);
+                int y = rand.Next(0, this.ClientSize.Height - size);
+                Graphics g = this.CreateGraphics();
+                Pen penpen = new Pen(Brushes.Blue);
+                g.DrawEllipse(penpen, x, y, size, size);
+                Thread.Sleep(2000);
+            }
         }
     }
 }
